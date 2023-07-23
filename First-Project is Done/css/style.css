@@ -1,0 +1,615 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  font-family: "DM Sans", sans-serif;
+  background-color: #191919;
+  color: #ffffff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  height: 119px;
+  background-color: #191919;
+}
+
+/* .logo {
+    display: inline-flex;
+} */
+
+svg {
+  padding-left: 50px;
+  width: 160px;
+  height: 33px;
+}
+
+.nav ul {
+  padding-top: 46px;
+}
+
+.nav li {
+  display: inline;
+  padding-left: 40px;
+}
+
+.nav li:last-child {
+  padding-right: 70px;
+}
+
+.nav a {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: transform 0.2s; /* Добавляем плавный переход при hover */
+}
+.nav a:hover {
+  color: #118da8;
+  transform: translateY(3px); /* Поднимаем текст на 3 пикселя при hover */
+}
+
+.main {
+  display: flex;
+  width: auto;
+  background-color: #191919;
+  position: relative;
+}
+
+.decor {
+  position: absolute;
+  top: 14px;
+  right: 1308;
+  left: 44px;
+  z-index: 3; /* Устанавливаем z-index больше, чем у других элементов, чтобы поместить его поверх них */
+}
+
+.main-img {
+  padding-left: 70px;
+  padding-top: 40px;
+}
+
+.main-frame {
+  width: 530px;
+  height: 610.578px;
+  padding-left: 60px;
+}
+
+.main-text {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 88px; /* 125.714% */
+  letter-spacing: 3.2px;
+  padding-top: 343px;
+}
+
+.main-text h3 {
+  width: 526px;
+  height: 176px;
+}
+
+/* .main-text .next {
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: 75px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 88px;
+    letter-spacing: 3.2px;
+    width: 160px;
+} */
+
+.main-text .level {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: 3.2px;
+  padding-left: 185px;
+}
+
+.listen-links {
+  width: 289px;
+  height: 72px;
+  flex-shrink: 0;
+}
+
+.listen-links p {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 160% */
+}
+
+.listen-icons {
+  display: inline-flex;
+  height: 32px;
+  padding-right: 0px;
+  align-items: flex-start;
+  gap: 17px;
+  flex-shrink: 0;
+  padding-top: 16px;
+  padding-bottom: 22px;
+}
+
+.list {
+  display: inline-flex;
+  justify-content: space-between;
+  margin: 100px 70px;
+  /* padding-top: 100px;
+    padding-left: 70px; */
+}
+
+.episodes .list h3 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 79.2px; /* 123.75% */
+  letter-spacing: 2.88px;
+  padding-right: 609px;
+}
+
+.viewAll {
+  width: 178px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #118da8;
+}
+
+.button {
+  /* Добавьте стили для центрирования формы внутри контейнера, если необходимо */
+  display: flex;
+  justify-content: center;
+  /* margin-top: px; */
+}
+
+/* Стилизуем кнопку для центрирования текста */
+.viewAll input[type="button"] {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 158.824% */
+  text-align: center;
+  display: block;
+  margin: 10px auto;
+}
+
+.unit {
+  /* width: 1300px; */
+  height: 545px;
+  border-radius: 32px;
+  background: #000;
+  margin: 0 70px;
+  margin-bottom: 60px;
+}
+.block {
+  display: inline-flex;
+  height: 465px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 53px;
+  flex-shrink: 0;
+}
+.block__icon {
+  margin: 40px 0px 40px 40px;
+  width: 389px;
+  height: 465px;
+  flex-shrink: 0;
+  display: flex;
+}
+.block-about {
+  width: 778px;
+  height: 465px;
+}
+.block-about__genre {
+  /* width: 73px;
+    height: 27px;
+    flex-shrink: 0; */
+  display: inline-flex;
+  border-radius: 6px;
+  background: #191919;
+  margin-top: 48px;
+}
+.block-about__genre_text {
+  width: auto;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0px 16px;
+}
+.block-about__text01 {
+  width: 85px;
+  flex-shrink: 0;
+  color: #118da8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  margin-top: 48px;
+}
+.block-about__text02 {
+  width: 701px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: 2.56px;
+  margin-top: 18px;
+}
+.block-about__text03 {
+  width: 757px;
+  height: 85px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 28px;
+}
+.button {
+  /* display: flex; */
+  margin-top: 18px;
+  padding: 12px 15px 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+/* Модификатор для первичной (primary) кнопки */
+.button--primary {
+  background: #118da8;
+  color: #fff;
+}
+.button__text {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+/* Модификатор для вторичной (secondary) кнопки */
+.button--secondary {
+  background: #118da8;
+  color: #fff;
+}
+.about {
+  padding: 100px 10px;
+}
+.about-block {
+  display: flex;
+  margin: 0 70px;
+  justify-content: space-between;
+}
+.about-block__left {
+  width: 590px;
+  height: 448px;
+  margin-top: 148px;
+}
+.about-block__left_icon {
+  width: 112px;
+  height: 112px;
+  border-radius: 400px;
+  background: #118da8;
+  display: flex; /* Добавляем flex контейнер */
+  justify-content: center; /* Центрируем содержимое по горизонтали */
+  align-items: center; /* Центрируем содержимое по вертикали */
+}
+.about-block__left_icon img {
+  transform: rotate(90deg);
+}
+.about-block__left_text01 {
+  width: 126px;
+  color: #118da8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.about-block__left_text02 {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  letter-spacing: 2.88px;
+}
+.about-block__left_text03 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  margin-top: 28px;
+  margin-bottom: 33px;
+}
+.about-block__left_text04 {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+.about-block__right {
+  display: flex;
+  align-items: right;
+}
+.subscribe {
+  margin: 0 20px;
+  padding: 100px 50px;
+  position: relative; /* Нужно установить "relative" для родительского блока, чтобы дочерний блок .subscribe-decor мог использовать "absolute" */
+}
+.subscribe-decor {
+  /* display: flex;
+    justify-content: start; */
+  /* padding-bottom: 72px; */
+  position: absolute;
+  top: 422px;
+  right: 1261;
+  left: 12px;
+  z-index: 2; /* Устанавливаем z-index больше, чем у других элементов, чтобы поместить его поверх них */
+}
+.subscribe-block {
+  height: 390px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 32px;
+  background: #000;
+}
+/* Отступ после последнего блока, чтобы избежать лишнего промежутка справа */
+.subscribe-block__secondary:last-child {
+  margin-right: 0;
+}
+.subscribe-block__primary {
+  /* width: 642px;
+    height: 330px; */
+  margin: 0px;
+}
+.subscribe-block__primary p {
+  color: #118da8;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-left: 60px;
+}
+.subscribe-block__primary .p02 {
+  width: 431px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: 2.88px;
+  margin-top: 0px;
+}
+.subscribe-block__secondary {
+  display: flex;
+  flex-direction: column; /* Это устанавливает элементы в колонку */
+  align-items: center; /* Выравнивание элементов по центру по горизонтали */
+}
+.subscribe-block__secondary form {
+  display: flex;
+  flex-direction: column; /* Это устанавливает элементы формы в колонку */
+  align-items: center; /* Выравнивание элементов формы по центру по горизонтали */
+}
+.subscribe-block__secondary input[type="text"]:first-child {
+  margin-top: 0px;
+}
+.subscribe-block__secondary input {
+  width: 520px;
+  height: 72px;
+  margin-bottom: 20px; /* Добавляет небольшой отступ между элементами */
+}
+.subscribe-block__secondary input {
+  /* width: 522px;
+    height: 82px; */
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #191919;
+  background: #191919;
+  padding-left: 20px;
+}
+.button-block {
+  /* display: flex; */
+  /* align-items: left; */
+  margin-top: 0px;
+  margin-right: 425px;
+  padding: 12px 15px 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+input::placeholder {
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-review {
+  margin: 0px 20px;
+}
+.review {
+  margin: 100px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.review-block {
+  width: 423px;
+  height: 321px;
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #000;
+  margin-bottom: 20px;
+  /* margin-right: 16px; */
+  overflow: hidden; /* Скрытие содержимого, выходящего за пределы блока */
+}
+.review-block:nth-of-type(4),
+.review-block:nth-of-type(5),
+.review-block:nth-of-type(6) {
+  margin-bottom: 0px;
+  /* margin-right: 16px; */
+}
+.review-block__star {
+  margin-top: 54px;
+  margin-left: 50px;
+}
+.review-block__star img {
+  /* margin-top: 54px; */
+  margin-right: 5px;
+}
+.review-block__text {
+  width: auto;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-top: 21px;
+  margin-left: 50px;
+}
+.review-block__name {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.8px; /* 120% */
+  margin-top: 19px;
+  margin-left: 50px;
+}
+.footer {
+  margin: 0px 20px;
+  padding: 100px 50px 50px 50px;
+}
+.footer-section {
+  display: flex;
+  width: 1300px;
+  padding: 0px 0.031px 16px 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+.footer-section__logo {
+  display: flex;
+  width: 447.141px;
+  height: 222px;
+  padding: 0.125px 0px 128.891px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19.984px;
+  flex-shrink: 0;
+}
+.footer-section__logo_img {
+  width: 224px;
+  height: 46px;
+  flex-shrink: 0;
+}
+.footer-section__logo_media {
+  display: flex;
+  height: 27px;
+  padding-right: 0px;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.footer-section__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section__nav_menu {
+  display: flex;
+  width: 178.844px;
+  padding: 0px 103.984px 84.875px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.footer-section__nav_menu li {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer-section__nav_menu a {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer-section__nav_menu a:hover {
+  color: #118da8;
+  transform: translateY(3px); /* Поднимаем текст на 3 пикселя при hover */
+}
+.footer-section__nav_guide {
+  display: flex;
+  width: 178.844px;
+  padding: 0px 4.828px 10.875px 0.016px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+}
+.footer-section__nav_guide li {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.footer-section__nav_guide a {
+  color: #ffffff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+.footer-section__nav_guide a:hover {
+  color: #118da8;
+  transform: translateY(3px); /* Поднимаем текст на 3 пикселя при hover */
+}
+.footer-section__links {
+  display: flex;
+  width: 447.141px;
+  height: 32px;
+  padding: 0px 150px 0px 100px;
+  align-items: flex-start;
+  gap: 17px;
+  flex-shrink: 0;
+  margin-left: 50px;
+}
+.listen-icons {
+  display: inline-flex;
+  height: 32px;
+  padding-right: 0px;
+  align-items: flex-start;
+  gap: 17px;
+  flex-shrink: 0;
+  /* padding-left: 50px; */
+  padding-bottom: 22px;
+}
+/* button:hover {
+    color: #BF55EC
+} */
+.last-footer {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
